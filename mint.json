@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "ZazuBot Docs",
+  "name": "ZazuBot   Docs",
   "openapi": ["/openapi/builder.json", "/openapi/viewer.json"],
   "feedback": {
     "suggestEdit": true
@@ -51,7 +51,7 @@
       "name": "Self-Hosting",
       "url": "self-hosting"
     },
-
+  
     {
       "name": "API Reference",
       "url": "api-reference"
