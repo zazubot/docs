@@ -6,15 +6,15 @@ Head over to the Share tab of your bot and click on the Webflow button to get th
 
 ## Advanced guides
 
-### Trigger a ZazuBot command on a click of a button
+### Trigger a zazubot command on a click of a button
 
 1. Head over to the `Settings` tab of your button and add a dedicated `ID`
-2. In your ZazuBot `Embed` element, insert this code in the existing `<script>` tag:
+2. In your zazubot `Embed` element, insert this code in the existing `<script>` tag:
 
 ```js
 document.getElementById("BUTTON_ID").addEventListener("click", (event) => {
   event.preventDefault();
-  ZazuBot.open();
+  zazubot.open();
 });
 ```
 
@@ -24,20 +24,20 @@ It should look like:
 
 ```html
 <script type="module">
-  import ZazuBot from "https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js";
+  import zazubot from "https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js";
 
-  ZazuBot.initPopup({
+  zazubot.initPopup({
     typebot: "my-typebot",
   });
 
   document.getElementById("BUTTON_ID_1").addEventListener("click", (event) => {
     event.preventDefault();
-    ZazuBot.open();
+    zazubot.open();
   });
 
   document.getElementById("BUTTON_ID_2").addEventListener("click", (event) => {
     event.preventDefault();
-    ZazuBot.open();
+    zazubot.open();
   });
 </script>
 ```

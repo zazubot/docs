@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "ZazuBot   Docs",
+  "name": "zazubot Docs",
   "openapi": ["/openapi/builder.json", "/openapi/viewer.json"],
   "feedback": {
     "suggestEdit": true
@@ -23,25 +23,25 @@
     "headings": {
       "family": "Uxum Grotesk",
       "weight": 500,
-      "url": "https://zazubot.com/fonts/uxumGrotesque/uxumGrotesqueMedium.woff2",
+      "url": "https://webapps1.chicago.gov/cdn/Fonts/RobotoDraftMedium.woff2",
       "format": "woff2"
     },
     "body": {
       "family": "Untitled Sans",
       "weight": 400,
-      "url": "https://zazubot.com/fonts/untitledSans/untitledSansRegular.woff2",
+      "url": "https://webapps1.chicago.gov/cdn/Fonts/RobotoDraftRegular.woff2",
       "format": "woff2"
     }
   },
   "topbarLinks": [
     {
       "name": "Github",
-      "url": "https://github.com/ZazuBot "
+      "url": "https://github.com/zazubot "
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://app.ZazuBot.com"
+    "url": "https://app.zazubot.com"
   },
   "primaryTab": {
     "name": "Learn"
@@ -242,7 +242,7 @@
       ]
     },
     {
-      "group": "ZazuBot  ",
+      "group": "zazubot  ",
       "pages": [
         "api-reference/typebot/list",
         "api-reference/typebot/get",
@@ -298,9 +298,9 @@
     }
   ],
   "footerSocials": {
-    "website": "https://ZazuBot.com",
+    "website": "https://zazubot.com",
     "discord": "https://discord.gg/gZWD6BzR",
-    "github": "https://github.com/ZazuBot "
+    "github": "https://github.com/zazubot "
   },
   "redirects": [
     {

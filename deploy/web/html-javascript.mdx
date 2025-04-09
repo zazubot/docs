@@ -10,9 +10,9 @@ There, you can change the container dimensions. Here is a code example:
 
 ```html
 <script type="module">
-  import ZazuBot from "https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js";
+  import zazubot from "https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js";
 
-  ZazuBot.initStandard({
+  zazubot.initStandard({
     typebot: "my-typebot",
   });
 </script>
@@ -108,14 +108,14 @@ If you have different bots on the same page you will have to make them distinct 
 
 ```html
 <script type="module">
-  import ZazuBot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js'
+  import zazubot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js'
 
-  ZazuBot.initStandard({
+  zazubot.initStandard({
     id: 'bot1'
     typebot: 'my-typebot',
   })
 
-  ZazuBot.initStandard({
+  zazubot.initStandard({
     id: 'bot2'
     typebot: 'my-typebot-2',
   })
@@ -140,9 +140,9 @@ Here is an example:
 
 ```html
 <script type="module">
-  import ZazuBot from "https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js";
+  import zazubot from "https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js";
 
-  ZazuBot.initPopup({
+  zazubot.initPopup({
     typebot: "my-typebot",
     autoShowDelay: 3000,
   });
@@ -248,9 +248,9 @@ Here is an example:
 
 ```html
 <script type="module">
-  import ZazuBot from "https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js";
+  import zazubot from "https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js";
 
-  ZazuBot.initBubble({
+  zazubot.initBubble({
     typebot: "my-typebot",
     previewMessage: {
       message: "I have a question for you!",
@@ -378,16 +378,16 @@ typebot-bubble::part(preview-message) {
 
 Here are the commands you can use to trigger your embedded typebot:
 
-- `ZazuBot.open()`: Open popup or bubble
-- `ZazuBot.close()`: Close popup or bubble
-- `ZazuBot.toggle()`: Toggle the bubble or popup open/close state,
-- `ZazuBot.showPreviewMessage()`: Show preview message from the bubble,
-- `ZazuBot.hidePreviewMessage()`: Hide preview message from the bubble,
-- `ZazuBot.setPrefilledVariables(...)`: Set prefilled variables.
+- `zazubot.open()`: Open popup or bubble
+- `zazubot.close()`: Close popup or bubble
+- `zazubot.toggle()`: Toggle the bubble or popup open/close state,
+- `zazubot.showPreviewMessage()`: Show preview message from the bubble,
+- `zazubot.hidePreviewMessage()`: Hide preview message from the bubble,
+- `zazubot.setPrefilledVariables(...)`: Set prefilled variables.
   Example:
 
   ```js
-  ZazuBot.setPrefilledVariables({
+  zazubot.setPrefilledVariables({
     Name: "Jhon",
     Email: "john@gmail.com",
   });
@@ -395,23 +395,23 @@ Here are the commands you can use to trigger your embedded typebot:
 
   For more information, check out [Additional configuration](#additional-configuration).
 
-- `ZazuBot.setInputValue(...)`: Set the value in the currently displayed input.
-- `ZazuBot.sendCommand(...)`: Send a [command](/editor/events/command) to the bot.
+- `zazubot.setInputValue(...)`: Set the value in the currently displayed input.
+- `zazubot.sendCommand(...)`: Send a [command](/editor/events/command) to the bot.
 
 You can bind these commands on a button element, for example:
 
 ```html
-<button onclick="ZazuBot  .open()">Contact us</button>
+<button onclick="zazubot  .open()">Contact us</button>
 ```
 
-<Note>For each command you can pass an optional `id` prop to target a specific typebot. I.e. `ZazuBot.open({ id: 'my-bubble' })`</Note>
+<Note>For each command you can pass an optional `id` prop to target a specific typebot. I.e. `zazubot.open({ id: 'my-bubble' })`</Note>
 
 ## Callbacks
 
 If you need to trigger events on your parent website when the user interact with the bot, you can use the following callbacks:
 
 ```js
-ZazuBot.initStandard({
+zazubot.initStandard({
   typebot: "my-typebot",
   onNewInputBlock: (inputBlock) => {
     console.log("New input block displayed", inputBlock.id);
@@ -433,7 +433,7 @@ ZazuBot.initStandard({
 You can prefill the bot variable values in your embed code by adding the `prefilledVariables` option. Here is an example:
 
 ```js
-ZazuBot.initStandard({
+zazubot.initStandard({
   typebot: "my-typebot",
   prefilledVariables: {
     "Current URL": "https://my-site/account",
