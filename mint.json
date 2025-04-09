@@ -167,7 +167,6 @@
           "icon": "globe",
           "pages": [
             "deploy/web/overview",
-            "deploy/web/custom-domain",
             "deploy/web/html-javascript",
             "deploy/web/react",
             "deploy/web/next-js",
