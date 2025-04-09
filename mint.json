@@ -48,11 +48,6 @@
   },
   "tabs": [
     {
-      "name": "Self-Hosting",
-      "url": "self-hosting"
-    },
-  
-    {
       "name": "API Reference",
       "url": "api-reference"
     }
@@ -230,31 +225,7 @@
       "group": "Misc",
       "pages": ["faq", "report-abuse", "breaking-changes"]
     },
-    {
-      "group": "Get started",
-      "pages": [
-        "self-hosting/get-started",
-        "self-hosting/configuration",
-        "self-hosting/troubleshoot"
-      ]
-    },
-    {
-      "group": "Deploy",
-      "pages": [
-        "self-hosting/deploy/docker",
-        "self-hosting/deploy/vercel",
-        "self-hosting/deploy/alibaba-cloud",
-        "self-hosting/deploy/manual"
-      ]
-    },
-    {
-      "group": "Guides",
-      "pages": ["self-hosting/guides/s3", "self-hosting/guides/planetscale"]
-    },
-    {
-      "group": "Misc",
-      "pages": ["self-hosting/breaking-changes"]
-    },
+
     {
       "group": "Get started",
       "pages": ["api-reference/authentication", "api-reference/how-to"]
