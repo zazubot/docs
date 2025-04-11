@@ -3,7 +3,7 @@ title: Set variable
 icon: pen
 ---
 
-import { YoutubeVideo } from '/snippets/youtube-video.mdx'
+import { YoutubeVideo } from "/snippets/youtube-video.mdx";
 
 The "Set variable" block allows you to set a particular value to a variable.
 
@@ -62,20 +62,20 @@ Transform existing variable to upper case or lower case:
 This can also be Javascript code. It will read the returned value of the code and set it to your variable.
 
 ```js
-const name = 'John' + 'Smith'
-return name
+const name = "John" + "Smith";
+return name;
 ```
 
 If you don't provide the `return` keyword then it will be automatically prepended to the beginning of your code.
 
 ```js
-'John' + 'Smith'
+"John" + "Smith";
 ```
 
 is the same as
 
 ```js
-return 'John' + 'Smith'
+return "John" + "Smith";
 ```
 
 <Info>
@@ -118,7 +118,7 @@ This will set your variable with either `web` or `whatsapp` depending on the env
 
 This preset value will save the entire conversation transcript in a variable. It is super useful to provide context to an AI block or to send it as a recap with the [Send email](../integrations/send-email) block.
 
-<YoutubeVideo id="OZLfiLp20f8" />
+<YoutubeVideo id="DqExIPl21dY" />
 
 ## Result ID
 
@@ -138,7 +138,7 @@ It will set your variable with either one of these values based on the user's ti
 
 Then you can use this variable to conditionally display content:
 
-<Frame style={{ maxWidth: '400px' }}>
+<Frame style={{ maxWidth: "400px" }}>
   <img
     src="/images/blocks/logic/moment-condition.png"
     alt="Moment of the day condition"
@@ -190,20 +190,20 @@ function getLocation() {
     navigator.geolocation.getCurrentPosition(
       (position) =>
         resolve(`${position.coords.latitude}, ${position.coords.longitude}`),
-      (error) => resolve('error'),
+      (error) => resolve("error"),
       { enableHighAccuracy: true, timeout: 5000 }
-    )
-  })
+    );
+  });
 }
 
-const coords = await getLocation()
+const coords = await getLocation();
 
 // Check for error
-if (coords === 'error') {
-  return 'Unable to get location'
+if (coords === "error") {
+  return "Unable to get location";
 }
 
-return coords
+return coords;
 ```
 
 This custom function can only work when it is executed on the client browser so you need to make sure to enable the "Execute on client" option.
