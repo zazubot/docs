@@ -16,7 +16,7 @@
     "/v1/typebots/{typebotId}/linkedTypebots": {
       "get": {
         "operationId": "getLinkedTypebots",
-        "summary": "Get linked typebots",
+        "summary": "Get linked zazubots",
         "tags": ["zazubot"],
         "security": [
           {
@@ -2945,8 +2945,8 @@
     },
     "/v1/typebots": {
       "post": {
-        "operationId": "typebot-createTypebot",
-        "summary": "Create a typebot",
+        "operationId": "zazubot-createTypebot",
+        "summary": "Create a zazubot",
         "tags": ["zazubot"],
         "security": [
           {
@@ -3257,8 +3257,8 @@
         }
       },
       "get": {
-        "operationId": "typebot-listTypebots",
-        "summary": "List typebots",
+        "operationId": "zazubot-listTypebots",
+        "summary": "List zazubots",
         "tags": ["zazubot"],
         "security": [
           {
@@ -3379,8 +3379,8 @@
     },
     "/v1/typebots/{typebotId}": {
       "patch": {
-        "operationId": "typebot-updateTypebot",
-        "summary": "Update a typebot",
+        "operationId": "zazubot-updateTypebot",
+        "summary": "Update a zazubot",
         "tags": ["zazubot"],
         "security": [
           {
@@ -5504,8 +5504,8 @@
         }
       },
       "get": {
-        "operationId": "typebot-getTypebot",
-        "summary": "Get a typebot",
+        "operationId": "zazubot-getTypebot",
+        "summary": "Get a zazubot",
         "tags": ["zazubot"],
         "security": [
           {
@@ -5625,8 +5625,8 @@
         }
       },
       "delete": {
-        "operationId": "typebot-deleteTypebot",
-        "summary": "Delete a typebot",
+        "operationId": "zazubot-deleteTypebot",
+        "summary": "Delete a zazubot",
         "tags": ["zazubot"],
         "security": [
           {
@@ -5718,8 +5718,8 @@
     },
     "/v1/typebots/{typebotId}/publishedTypebot": {
       "get": {
-        "operationId": "typebot-getPublishedTypebot",
-        "summary": "Get published typebot",
+        "operationId": "zazubot-getPublishedTypebot",
+        "summary": "Get published zazubot",
         "tags": ["zazubot"],
         "security": [
           {
@@ -5851,8 +5851,8 @@
     },
     "/v1/typebots/{typebotId}/publish": {
       "post": {
-        "operationId": "typebot-publishTypebot",
-        "summary": "Publish a typebot",
+        "operationId": "zazubot-publishTypebot",
+        "summary": "Publish a zazubot",
         "tags": ["zazubot"],
         "security": [
           {
@@ -5934,8 +5934,8 @@
     },
     "/v1/typebots/{typebotId}/unpublish": {
       "post": {
-        "operationId": "typebot-unpublishTypebot",
-        "summary": "Unpublish a typebot",
+        "operationId": "zazubot-unpublishTypebot",
+        "summary": "Unpublish a zazubot",
         "tags": ["zazubot"],
         "security": [
           {
@@ -6017,7 +6017,7 @@
     },
     "/v1/typebots/import": {
       "post": {
-        "operationId": "typebot-importTypebot",
+        "operationId": "zazubot-importTypebot",
         "summary": "Import a zazubot",
         "tags": ["zazubot"],
         "security": [
