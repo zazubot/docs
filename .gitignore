@@ -1,1 +1,17 @@
 node_modules
+.DS_Store
+package-lock.json
+yarn-error.log  
+yarn.lock
+coverage
+dist
+.vscode
+.idea
+*.iml
+*.log
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*.tmp
+*.temp
