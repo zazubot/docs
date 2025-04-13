@@ -220,10 +220,6 @@
         "guides/how-to-split-ai-messages-in-multi-blocks"
       ]
     },
-    {
-      "group": "Misc",
-      "pages": ["faq", "report-abuse", "breaking-changes"]
-    },
 
     {
       "group": "Get started",
